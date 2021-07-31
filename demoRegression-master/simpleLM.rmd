@@ -46,3 +46,27 @@ summary.lm(my_chest)
 ```
 
 In the first model, the Residual Standard error was 5.37 and the Adjusted R-squared was 0.747, when comparing the length of the bear to its neck. However, in the second model, the Residual Standard Error decreased to 4.93 and the Adjusted R-squared increased to 0.786. The two models show the Adjusted R-square has increased with the second model. Meanwhile the Residual Standard Error has decreased with the second model, when comparing the length of the bear to its chest. The first(SIMP) model, was used in the first graph to compare the length~neck and the second(my_chest) model was used to compare the length~chest.
+
+## Model LENGTH ~ AGE  this is an example  
+
+```{r}
+my_ages <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(my_ages)
+summary.lm(my_ages)
+```
+
+The my_ages model shows the Adjusted R_squared 0.507 and the Residual Standard Error 7.51. Which means just as one value increased so did the other.
+
+## Model LENGTH ~ WEIGHT  this is an example  
+
+```{r}
+my_weight <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(my_weight)
+summary.lm(my_weight)
+```
+
+The my_weight model shows Residual Standard Error is 5.43 and the Adjusted R-squared is 0.742. That means the Residual Standard Error has increased, while, the Adjusted R-squared decreases.
+
+
